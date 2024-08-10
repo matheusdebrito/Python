@@ -5,7 +5,7 @@ que haja erro no primeiro bloco, ou seja o bloco finally é de execução obriga
 ❷ Fecha o arquivo, liberando os seus recursos
 """
 
-arquivo = open('teste2.txt')
+arquivo = open('testeCSV.csv')
 try: #1
     for registro in arquivo:
         print(registro)

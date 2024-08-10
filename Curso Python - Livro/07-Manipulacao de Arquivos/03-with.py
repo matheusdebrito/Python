@@ -7,9 +7,9 @@ contextos
 ❷ A propriedade closed indica se o arquivo está fechado
 """
 
-with open('teste2.txt') as arquivo:#1
+with open('testeCSV.csv') as arquivo:#1
     for registro in arquivo:
-        print(registro)
+        print(registro.splitlines())
 
 if arquivo.closed:#2
     print("Arquivo Fechado")

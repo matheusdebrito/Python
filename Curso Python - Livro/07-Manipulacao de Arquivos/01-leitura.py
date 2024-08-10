@@ -5,17 +5,13 @@ passado como argumento e retorna uma instância do io.TextIOWrapper
 ❸ O método close() fecha o arquivo
 """
 
-arquivo = open('teste.txt') #1
+arquivo = open('testeCSV.csv') #1
 dados = arquivo.read() #2
 arquivo.close() #3
 
-for registro in dados.splitlines():
-    print(registro.split(','))
+lista = []
 
-arquivo2 = open('teste2.txt')
-
-for registro2 in arquivo2:
-    print(registro2)
-
-arquivo2.close()
-
+for i in dados.splitlines():
+    lista.append((i.split(',')[0]))
+    lista.append((i.split(',')[1]))
+print(lista)
