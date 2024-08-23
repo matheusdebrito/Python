@@ -19,3 +19,24 @@ conforme o caso
 print('----------------------------------------')
 print(10 /2 )
 print(type(10/2))
+
+
+# Sem usar lambda
+
+def calc_preco_total(compra): 
+    return compra['quantidade'] * compra['preco']
+
+compras = (
+    {'quantidade': 2, 'preco': 10},
+    {'quantidade': 3, 'preco': 20},
+    {'quantidade': 5, 'preco': 14},
+)
+
+totais = tuple(
+    map(
+        calc_preco_total, 
+        compras
+    )
+)
+print('Preços totais:', list(totais))
+print('Total geral:', sum(totais))
