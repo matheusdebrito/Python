@@ -4,7 +4,7 @@ neste caso é assumido object
 ❷ Na classe Project teremos uma lista de tarefas que pertencem ao projeto
 ❸ É possível acessar o atributo tasks e iterar sobre eles
 '''
-from teste import Task
+from buscaBinaria import Task
 
 
 class Project: #1
